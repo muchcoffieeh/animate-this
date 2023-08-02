@@ -28,9 +28,12 @@ body, div {
   align-items: flex-start;
   justify-content: center;
   width: 75%;
-  background-color: #f9f9f9; /* Replace with your desired background color */
-  /* Add any other styling for the right-div */
   height: 100vh;
+  --bg-color: #f9f9f9; /* Default background color for .right-div */
+  background-color: var(--bg-color);
+  background-image: none; /* No background image by default */
+  background-size: cover;
+  transition: background-image 0.3s ease; /* Transition effect */
 }
 
 /* Add the styles for the navigation container */
@@ -39,6 +42,7 @@ body, div {
   flex-direction: column;
   align-items: flex-end; /* Align the content to the right side */
   margin-left: auto; /* Push the container to the right side */
+  padding-right: 50px;
 }
 
 /* Add the styles for the vertical navigation */
@@ -58,8 +62,9 @@ body, div {
 
 .vertical-nav li {
   padding: 10px;
-  /* Add any other styling for the navigation items */
+  cursor: pointer;
 }
+
 
 .vertical-nav li a {
   text-decoration: none;
