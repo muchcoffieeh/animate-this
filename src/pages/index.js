@@ -5,15 +5,15 @@ import "../css/index.css";
 const sections = [
   {
     title: "Section 1",
-    image: "../images/aaf-comp.jpg", // Replace with actual image path
+    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 1" />,
   },
   {
     title: "Section 2",
-    image: "../images/aaf-comp.jpg", // Replace with actual image path
+    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 2" />,
   },
   {
     title: "Section 3",
-    image: "../images/aaf-comp.jpg", // Replace with actual image path
+    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 3" />,
   },
   // Add more sections as needed
 ];

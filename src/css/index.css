@@ -60,12 +60,44 @@ body, div {
   margin: 0;
 }
 
+/* Adjust the li elements to have position: relative */
 .vertical-nav li {
   padding: 10px;
   cursor: pointer;
+  position: relative; /* Add this line */
+  z-index: 100;
 }
 
+/* Add the blue rectangle pseudo-element */
+.vertical-nav li::after {
+  content: "";
+  position: fixed;
+  right: 0;
+  width: 20%;
+  height: 20px; /* Height of the blue rectangle */
+  background-color: rgb(75, 213, 255); /* Blue color for the rectangle */
+  transform: scaleX(0); /* Initial scaleX to hide the rectangle */
+  transform-origin: right;
+  transition: transform 0.3s ease; /* Transition effect for the rectangle */
+  z-index: -10;
+}
 
+.vertical-nav li:nth-child(1)::after {
+  top: 49vh; /* Adjust this value to control the distance below the link */
+}
+
+.vertical-nav li:nth-child(2)::after {
+  top: 54vh; /* Adjust this value to control the distance below the link */
+}
+
+.vertical-nav li:nth-child(3)::after {
+  top: 58vh; /* Adjust this value to control the distance below the link */
+}
+
+/* Show the blue rectangle when hovering over the section link */
+.vertical-nav li:hover::after {
+  transform: scaleX(1);
+}
 .vertical-nav li a {
   text-decoration: none;
   color: #333; /* Replace with your desired link color */
@@ -89,3 +121,5 @@ body, div {
     align-self: flex-start;
     padding-top: 200px;;
 }
+
+
