@@ -31,8 +31,8 @@ const sections = [
     },
   },
   {
-    title: "Section 2",
-    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 2" />,
+    title: "Section 4",
+    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 4" />,
     text: {
       title: "Work",
       content: "FreeWire sdfagsdasd",
@@ -44,15 +44,23 @@ const sections = [
 const IndexPage = () => {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [heroText, setHeroText] = useState(sections[0].text); // Initialize with the first section's text
+  const [isHovering, setIsHovering] = useState(false); // Track whether a section link is being hovered
+  const defaultText = {
+    title: "Default Title",
+    content: "Default Content",
+    desc: "Default Description",
+  };
 
   const handleSectionHover = (image, text) => {
     setBackgroundImage(image);
     setHeroText(text);
+    setIsHovering(true); // Set the flag to true when hovering over a section link
   };
 
   const handleMouseLeave = () => {
     setBackgroundImage(sections[0].image);
-    setHeroText(sections[0].text);
+    setHeroText(defaultText);
+    setIsHovering(false); // Set the flag to false when not hovering over a section link
   };
 
   return (
@@ -92,9 +100,9 @@ const IndexPage = () => {
 
       <div className="hero-section">
         <div className="hero-left">
-          <h2>{heroText.title}</h2>
-          <p>{heroText.content}</p>
-          <p>{heroText.desc}</p>
+          <h2>{isHovering ? heroText.title : defaultText.title}</h2>
+          <p>{isHovering ? heroText.content : defaultText.content}</p>
+          <p>{isHovering ? heroText.desc : defaultText.desc}</p>
         </div>
       </div>
     </main>
