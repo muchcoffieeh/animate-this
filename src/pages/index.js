@@ -4,17 +4,17 @@ import "../css/index.css";
 
 const sections = [
   {
-    title: "Section 1",
-    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 1" />,
+    title: "Pantheon Platform",
+    image: "../images/pantheon-comp.jpg",
     text: {
-      title: "Intro",
-      content: "Hi there. I'm Serena",
-      desc: "I’m a designer working on infrastructure and developer experiences."
+      title: "Work",
+      content: "Pantheon .....",
+      desc: "I do blah blah blahdsfs....."
     },
   },
   {
-    title: "Section 2",
-    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 2" />,
+    title: "Tempus Ex",
+    image: "../images/txm-comp.jpg",
     text: {
       title: "Work",
       content: "Pantheon sdfagsdasd",
@@ -22,8 +22,8 @@ const sections = [
     },
   },
   {
-    title: "Section 3",
-    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 3" />,
+    title: "FreeWire Technologies",
+    image: "../images/freewire-comp.jpg",
     text: {
       title: "Work",
       content: "Tempus Ex sdfagsdasd",
@@ -31,8 +31,8 @@ const sections = [
     },
   },
   {
-    title: "Section 4",
-    image: <StaticImage src="../images/aaf-comp.jpg" alt="Section 4" />,
+    title: "Alliance of American Football",
+    image: "../images/aaf-comp.jpg",
     text: {
       title: "Work",
       content: "FreeWire sdfagsdasd",
@@ -46,9 +46,9 @@ const IndexPage = () => {
   const [heroText, setHeroText] = useState(sections[0].text); // Initialize with the first section's text
   const [isHovering, setIsHovering] = useState(false); // Track whether a section link is being hovered
   const defaultText = {
-    title: "Default Title",
-    content: "Default Content",
-    desc: "Default Description",
+    title: "INTRO",
+    content: "Hi there. I'm Serena.",
+    desc: "I’m a designer working on infrastructure and developer experiences.",
   };
 
   const handleSectionHover = (image, text) => {
@@ -57,11 +57,18 @@ const IndexPage = () => {
     setIsHovering(true); // Set the flag to true when hovering over a section link
   };
 
+  // const handleMouseLeave = () => {
+  //   setBackgroundImage(sections[0].image);
+  //   setHeroText(defaultText);
+  //   setIsHovering(false); // Set the flag to false when not hovering over a section link
+  // };
+
   const handleMouseLeave = () => {
-    setBackgroundImage(sections[0].image);
+    setBackgroundImage(""); // Reset background image to empty string
     setHeroText(defaultText);
     setIsHovering(false); // Set the flag to false when not hovering over a section link
   };
+  
 
   return (
     <main>
@@ -111,4 +118,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Designed By Serena</title>;

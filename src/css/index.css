@@ -3,6 +3,7 @@ body, div {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: "Yantramanav", Helvetica, Arial, sans-serif;;
 }
 .left-div {
   float: left;
@@ -53,6 +54,13 @@ body, div {
   /* Add any other styling you want for the vertical navigation */
 }
 
+.navigation-heading{
+  font-family: 'Roboto Mono', sans-serif;
+    color: #999;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
 /* Style the navigation items (list items) */
 .vertical-nav ul {
   list-style: none;
@@ -66,6 +74,8 @@ body, div {
   cursor: pointer;
   position: relative; /* Add this line */
   z-index: 100;
+  font-size: 35px;
+  text-align: right;
 }
 
 /* Add the blue rectangle pseudo-element */
