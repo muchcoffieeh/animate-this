@@ -91,6 +91,10 @@ body, div {
 }
 
 .vertical-nav li:nth-child(3)::after {
+  top: 56vh; /* Adjust this value to control the distance below the link */
+}
+
+.vertical-nav li:nth-child(4)::after {
   top: 58vh; /* Adjust this value to control the distance below the link */
 }
 
