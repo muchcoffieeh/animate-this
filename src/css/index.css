@@ -1,0 +1,86 @@
+
+body, div {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.left-div {
+  float: left;
+  width: 25%;
+  background-color: white; /* Replace with your desired background color */
+  height: 100vh;
+}
+
+.logo-container{
+    position: fixed;
+    left: 20px;
+    top: 0px;
+    z-index: 10;
+    width: 136px;
+    height: 136px;
+    padding-top: 16px;
+}
+
+/* Add the styles for the right-div container */
+.right-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 75%;
+  background-color: #f9f9f9; /* Replace with your desired background color */
+  /* Add any other styling for the right-div */
+  height: 100vh;
+}
+
+/* Add the styles for the navigation container */
+.navigation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align the content to the right side */
+  margin-left: auto; /* Push the container to the right side */
+}
+
+/* Add the styles for the vertical navigation */
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Adjust this width as needed */
+  /* Add any other styling you want for the vertical navigation */
+}
+
+/* Style the navigation items (list items) */
+.vertical-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-nav li {
+  padding: 10px;
+  /* Add any other styling for the navigation items */
+}
+
+.vertical-nav li a {
+  text-decoration: none;
+  color: #333; /* Replace with your desired link color */
+  /* Add any other styling for the navigation links */
+}
+
+.hero-section{
+    display: flex;
+    width: 90%;
+    min-height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 180px;
+}
+
+.hero-left{
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 636px;
+    align-self: flex-start;
+    padding-top: 200px;;
+}
