@@ -8,7 +8,7 @@ body, div {
 .left-div {
   float: left;
   width: 25%;
-  background-color: white; /* Replace with your desired background color */
+  background-color: black; /* Replace with your desired background color */
   height: 100vh;
 }
 
@@ -30,11 +30,11 @@ body, div {
   justify-content: center;
   width: 75%;
   height: 100vh;
-  --bg-color: #f9f9f9; /* Default background color for .right-div */
+  --bg-color: #616161; /* Default background color for .right-div */
   background-color: var(--bg-color);
   background-image: none; /* No background image by default */
   background-size: cover;
-  transition: background-image 0.3s ease; /* Transition effect */
+  transition: background-image 0.9s ease-in; /* Transition effect */
 }
 
 /* Add the styles for the navigation container */
@@ -56,9 +56,10 @@ body, div {
 
 .navigation-heading{
   font-family: 'Roboto Mono', sans-serif;
-    color: #999;
+    color: #fff;
     text-align: right;
     letter-spacing: 2px;
+    font-weight: 100;
 }
 
 /* Style the navigation items (list items) */
@@ -75,6 +76,7 @@ body, div {
   position: relative; /* Add this line */
   z-index: 100;
   font-size: 35px;
+  font-weight: 600;
   text-align: right;
 }
 
@@ -83,8 +85,8 @@ body, div {
   content: "";
   position: fixed;
   right: 0;
-  width: 20%;
-  height: 20px; /* Height of the blue rectangle */
+  
+  height: 30px; /* Height of the blue rectangle */
   background-color: rgb(75, 213, 255); /* Blue color for the rectangle */
   transform: scaleX(0); /* Initial scaleX to hide the rectangle */
   transform-origin: right;
@@ -93,19 +95,23 @@ body, div {
 }
 
 .vertical-nav li:nth-child(1)::after {
-  top: 49vh; /* Adjust this value to control the distance below the link */
+  top: 44vh; /* Adjust this value to control the distance below the link */
+  width: 28%;
 }
 
 .vertical-nav li:nth-child(2)::after {
-  top: 54vh; /* Adjust this value to control the distance below the link */
+  top: 50vh; /* Adjust this value to control the distance below the link */
+  width: 18%;
 }
 
 .vertical-nav li:nth-child(3)::after {
   top: 56vh; /* Adjust this value to control the distance below the link */
+  width: 30%;
 }
 
 .vertical-nav li:nth-child(4)::after {
-  top: 58vh; /* Adjust this value to control the distance below the link */
+  top: 62vh; /* Adjust this value to control the distance below the link */
+  width: 37%;
 }
 
 /* Show the blue rectangle when hovering over the section link */
@@ -114,7 +120,7 @@ body, div {
 }
 .vertical-nav li a {
   text-decoration: none;
-  color: #333; /* Replace with your desired link color */
+  color: #dbdbdb; /* Replace with your desired link color */
   /* Add any other styling for the navigation links */
 }
 
@@ -136,4 +142,15 @@ body, div {
     padding-top: 200px;;
 }
 
+.hero-left p{
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+  line-height: 43px;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.p-2{
+  font-weight: 400;
+}
 

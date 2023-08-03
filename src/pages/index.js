@@ -8,8 +8,8 @@ const sections = [
     image: "../images/pantheon-comp.jpg",
     text: {
       title: "Work",
-      content: "Pantheon .....",
-      desc: "I do blah blah blahdsfs....."
+      content: "Pantheon powers the open web with a cloud native software making it easy to securely manage a single website or thousands of websites across multiple teams in one platform.",
+      desc: "I’m currently designing developer experiences and leading design on the Core Site Services team."
     },
   },
   {
@@ -17,8 +17,8 @@ const sections = [
     image: "../images/txm-comp.jpg",
     text: {
       title: "Work",
-      content: "Pantheon sdfagsdasd",
-      desc: "I do blah blah blah....."
+      content: "Merging sports, video, and data with innovation and accessibility, Tempus Ex technology enables the creation of new interactive experiences around live events.",
+      desc: "I was rapidly translating product ideas into dynamic visual prototypes."
     },
   },
   {
@@ -26,8 +26,8 @@ const sections = [
     image: "../images/freewire-comp.jpg",
     text: {
       title: "Work",
-      content: "Tempus Ex sdfagsdasd",
-      desc: "I do blah blah blah afsdgfr....."
+      content: "FreeWire is an industry leader in battery-integrated ultrafast electric vehicle (EV) charging and energy management solutions solving grid infrastructure constraints.",
+      desc: "I designed digital solutions that seamlessly complemented the battery-integrated ultrafast EV charging and energy management offerings."
     },
   },
   {
@@ -35,8 +35,8 @@ const sections = [
     image: "../images/aaf-comp.jpg",
     text: {
       title: "Work",
-      content: "FreeWire sdfagsdasd",
-      desc: "I do blah blah blah....."
+      content: "The Alliance of American Football left a legacy of pioneering advanced sport tech, including real-time fantasy app with interactive features that revolutionized the fan experience.",
+      desc: "I focused on crafting interactive experiences and enhancing fan engagement both during games and in-between."
     },
   },
 ];
@@ -88,7 +88,7 @@ const IndexPage = () => {
 
       <div className="right-div" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="navigation-container">
-          <h2 className="navigation-heading">My Work</h2>
+          <h2 className="navigation-heading">MY WORK</h2>
           <nav className="vertical-nav">
             <ul>
               {sections.map((section, index) => (
@@ -109,7 +109,7 @@ const IndexPage = () => {
         <div className="hero-left">
           <h2>{isHovering ? heroText.title : defaultText.title}</h2>
           <p>{isHovering ? heroText.content : defaultText.content}</p>
-          <p>{isHovering ? heroText.desc : defaultText.desc}</p>
+          <p className="p-2">{isHovering ? heroText.desc : defaultText.desc}</p>
         </div>
       </div>
     </main>
