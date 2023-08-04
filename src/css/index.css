@@ -86,7 +86,7 @@ body, div {
   position: fixed;
   right: 0;
   
-  height: 30px; /* Height of the blue rectangle */
+  height: 40px; /* Height of the blue rectangle */
   background-color: rgb(75, 213, 255); /* Blue color for the rectangle */
   transform: scaleX(0); /* Initial scaleX to hide the rectangle */
   transform-origin: right;
